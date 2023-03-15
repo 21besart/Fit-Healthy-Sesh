@@ -21,7 +21,7 @@ This project is done using [React](https://reactjs.org/) with [JavaScript](https
 
 ## Live Version
 
-TO DO: Deploy to Netlify
+[Live Version](https://fitsesh.netlify.app)
 
 ## Getting Started
 
