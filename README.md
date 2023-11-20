@@ -5,9 +5,6 @@ This project is done using [React](https://reactjs.org/) with [JavaScript](https
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![MUI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=white&style=for-the-badge)
 
-## 🚨🚨🚨
-#####  Please be informed that the app is currently running on a basic API subscription, which means that it may go blank at any time if the API calls exceed the limit. If you experience any issues, please don't hesitate to contact me. Thank you for your understanding.
-
 ## Features
 
 - Show more than 1000 exercises
