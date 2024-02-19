@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import Detail from "../components/ExerciseDetail/Detail";
-import { ExerciseVideos } from "../components/ExerciseDetail/ExerciseVideos";
+import ExerciseVideos from "../components/ExerciseDetail/ExerciseVideos";
 import { SimilarExercises } from "../components/ExerciseDetail/SimilarExercises";
 import {
   exerciseOptions,
