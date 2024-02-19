@@ -12,8 +12,9 @@ import {
   youtubeOptions,
   YOUTUBE_API_URL,
 } from "../utils/fetchData";
+import { withErrorBoundary } from "../components/shared/ErrorBoundary";
 
-export const ExerciseDetail = () => {
+const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
   const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
@@ -67,3 +68,5 @@ export const ExerciseDetail = () => {
     </Box>
   );
 };
+
+export default withErrorBoundary(ExerciseDetail);
