@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { HorizontalScrollbar } from "../shared/HorizontalScrollbar";
+import HorizontalScrollbar from "../shared/HorizontalScrollbar";
 import { Loader } from "../shared/Loader";
 import { withErrorBoundary } from "../shared/ErrorBoundary";
 

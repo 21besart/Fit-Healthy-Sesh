@@ -5,7 +5,7 @@ import {
   exerciseOptions,
   fetchData,
 } from "../utils/fetchData";
-import { HorizontalScrollbar } from "./shared/HorizontalScrollbar";
+import HorizontalScrollbar from "./shared/HorizontalScrollbar";
 import { withErrorBoundary } from "./shared/ErrorBoundary";
 
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
