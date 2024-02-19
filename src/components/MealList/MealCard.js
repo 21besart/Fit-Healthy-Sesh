@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { fetchMealPlan, SPOONACULAR_API_URL } from "../../utils/fetchMealPlan";
 import { Loader } from "../shared/Loader";
+import { withErrorBoundary } from "../shared/ErrorBoundary";
 
-export default function MealCard({ meal }) {
+function MealCard({ meal }) {
   const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
@@ -85,3 +86,5 @@ export default function MealCard({ meal }) {
     </Box>
   );
 }
+
+export default withErrorBoundary(MealCard);

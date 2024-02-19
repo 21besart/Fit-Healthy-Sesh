@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 
-import { Detail } from "../components/ExerciseDetail/Detail";
-import { ExerciseVideos } from "../components/ExerciseDetail/ExerciseVideos";
-import { SimilarExercises } from "../components/ExerciseDetail/SimilarExercises";
+import Detail from "../components/ExerciseDetail/Detail";
+import ExerciseVideos from "../components/ExerciseDetail/ExerciseVideos";
+import SimilarExercises from "../components/ExerciseDetail/SimilarExercises";
 import {
   exerciseOptions,
   EXERCISE_API_URL,
@@ -12,8 +12,9 @@ import {
   youtubeOptions,
   YOUTUBE_API_URL,
 } from "../utils/fetchData";
+import { withErrorBoundary } from "../components/shared/ErrorBoundary";
 
-export const ExerciseDetail = () => {
+const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
   const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
@@ -67,3 +68,5 @@ export const ExerciseDetail = () => {
     </Box>
   );
 };
+
+export default withErrorBoundary(ExerciseDetail);

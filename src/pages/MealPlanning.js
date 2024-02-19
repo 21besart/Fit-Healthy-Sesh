@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import { MealList } from "../components/MealList/MealList";
+import MealList from "../components/MealList/MealList";
 import { SPOONACULAR_API_URL, fetchMealPlan } from "../utils/fetchMealPlan";
+import { withErrorBoundary } from "../components/shared/ErrorBoundary";
 
-export const MealPlanning = () => {
+const MealPlanning = () => {
   const [calories, setCalories] = useState("");
   const [mealData, setMealData] = useState(null);
 
@@ -84,3 +85,5 @@ export const MealPlanning = () => {
     </Box>
   );
 };
+
+export default withErrorBoundary(MealPlanning);
