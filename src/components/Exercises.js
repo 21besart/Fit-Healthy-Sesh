@@ -6,10 +6,9 @@ import {
   fetchData,
 } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
+import { withErrorBoundary } from "./shared/ErrorBoundary";
 
-export const Exercises = ({ exercises, setExercises, bodyPart }) => {
-  console.log(exercises);
-
+const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
@@ -85,3 +84,5 @@ export const Exercises = ({ exercises, setExercises, bodyPart }) => {
     </Box>
   );
 };
+
+export default withErrorBoundary(Exercises);
