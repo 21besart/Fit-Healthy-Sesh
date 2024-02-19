@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography } from '@mui/material';
+import React from "react";
+import { Typography } from "@mui/material";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -17,12 +17,12 @@ class ErrorBoundary extends React.Component {
         <Typography
           color="error"
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          {this.state.error.toString()}
+          Error: {this.state.error.message.toString()}
         </Typography>
       );
     }
