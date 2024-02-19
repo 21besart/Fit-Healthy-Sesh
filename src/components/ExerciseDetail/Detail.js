@@ -4,7 +4,9 @@ import BodyPartImage from "../../assets/icons/body-part.png";
 import TargetImage from "../../assets/icons/target.png";
 import EquipmentImage from "../../assets/icons/equipment.png";
 
-export const Detail = ({ exerciseDetail }) => {
+import { withErrorBoundary } from "../shared/ErrorBoundary";
+
+const Detail = ({ exerciseDetail }) => {
   const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
 
   const extraDetails = [
@@ -63,3 +65,5 @@ export const Detail = ({ exerciseDetail }) => {
     </Stack>
   );
 };
+
+export default withErrorBoundary(Detail);
