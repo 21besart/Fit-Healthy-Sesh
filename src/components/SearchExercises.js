@@ -6,8 +6,9 @@ import {
   fetchData,
 } from "../utils/fetchData";
 import { HorizontalScrollbar } from "./shared/HorizontalScrollbar";
+import { withErrorBoundary } from "./shared/ErrorBoundary";
 
-export const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [search, setSearch] = useState("");
   const [bodyParts, setBodyParts] = useState([]);
 
@@ -102,3 +103,5 @@ export const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     </Stack>
   );
 };
+
+export default withErrorBoundary(SearchExercises);
