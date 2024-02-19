@@ -5,7 +5,7 @@ import {
   EXERCISE_API_URL,
   fetchData,
 } from "../utils/fetchData";
-import { ExerciseCard } from "./ExerciseCard";
+import ExerciseCard from "./ExerciseCard";
 
 export const Exercises = ({ exercises, setExercises, bodyPart }) => {
   console.log(exercises);
