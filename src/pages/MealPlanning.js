@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import { MealList } from "../components/MealList/MealList";
+import MealList from "../components/MealList/MealList";
 import { SPOONACULAR_API_URL, fetchMealPlan } from "../utils/fetchMealPlan";
 
 export const MealPlanning = () => {

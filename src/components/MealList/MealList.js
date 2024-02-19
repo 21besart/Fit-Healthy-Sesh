@@ -1,7 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import MealCard from "./MealCard";
+import { withErrorBoundary } from "../shared/ErrorBoundary";
 
-export const MealList = ({ mealData }) => {
+const MealList = ({ mealData }) => {
   const { nutrients } = mealData;
 
   return (
@@ -30,3 +31,5 @@ export const MealList = ({ mealData }) => {
     </Box>
   );
 };
+
+export default withErrorBoundary(MealList);
