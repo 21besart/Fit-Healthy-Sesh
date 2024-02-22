@@ -39,7 +39,7 @@ export const Navbar = () => {
         </NavLink>
 
         <a
-          href="#exercises"
+          href="/#exercises"
           style={{ textDecoration: "none", color: "#3a1212" }}
         >
           Exercises
